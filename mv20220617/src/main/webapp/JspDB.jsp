@@ -23,7 +23,7 @@
             Connection connection = DriverManager.getConnection(url,username,password );
 
             Statement statement = connection.createStatement(
-                ResultSet.TYPE_SCROLL_INSENSITIVE,
+                ResultSet.TYPE_SCROLL_SENSITIVE,
                 ResultSet.CONCUR_READ_ONLY);
 
             ResultSet resultset = statement.executeQuery("select  *  from  classicmodels.employees"); 
